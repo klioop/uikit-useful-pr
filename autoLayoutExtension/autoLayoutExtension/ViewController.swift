@@ -55,6 +55,14 @@ extension UIView {
         heightAnchor.constraint(equalTo: widthAnchor).isActive = true
     }
     
+    func anchorCenterX(to view: UIView) {
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
+    func anchorCenterY(to view: UIView) {
+        centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
     func anchor(top: NSLayoutYAxisAnchor?,
                 leading: NSLayoutXAxisAnchor?,
                 trailing: NSLayoutXAxisAnchor?,
