@@ -27,8 +27,10 @@ class ViewController: UIViewController {
                                                                  backgroundColor: .systemRed))
         
         view.addSubview(twoLineButton)
-        twoLineButton.center = view.center
         view.addSubview(iconTextButton)
+        
+        twoLineButton.center = view.center
+        
         iconTextButton.translatesAutoresizingMaskIntoConstraints = false
         iconTextButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
         iconTextButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
